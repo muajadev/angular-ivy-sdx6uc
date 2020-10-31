@@ -1,7 +1,7 @@
 <div class="container mt-1 mb-2">
   <div class="card border-primary text-primary">
     <div class="card-header h3">
-      <i class="far fa-user"></i> Actualización de usuarios
+      <i class="fas fa-home"></i> Actualización de sucursales
     </div>
     <div class="card-body text-primary">
       <h4 class="card-title text-center">Actualizando</h4>
@@ -10,42 +10,41 @@
       <form>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
+            <label for="inputEmail4">Nombre sucursal</label>
             <input
-              type="email"
+              type="text"
               class="form-control form-control-sm"
               id="inputEmail4"
-              placeholder="ejemplo@correo.com"
+              placeholder="nombre de sucursal"
               ngModel
               required
             />
           </div>
           <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
+            <label for="inputPassword4">Descripción</label>
             <input
-              type="password"
+              type="text"
               class="form-control form-control-sm"
               id="inputPassword4"
+              placeholder="Descripción de sucursal"
             />
           </div>
         </div>
         <div class="form-group">
-          <label for="inputAddress">Nombre completo</label>
-          <input
-            type="text"
+          <label for="inputAddress">Cabecera de ticket</label>
+          <textarea
             class="form-control form-control-sm"
-            id="inputAddress"
-            placeholder="1234 Main St"
-          />
+            id="cabecera"
+            rows="3"
+          ></textarea>
         </div>
         <div class="form-group">
-          <label for="inputAddress2">Dirección</label>
-          <input
-            type="text"
+          <label for="inputAddress2">Pie de ticket</label>
+          <textarea
             class="form-control form-control-sm"
-            id="inputAddress2"
-            placeholder="Apartment, studio, or floor"
-          />
+            id="pie"
+            rows="3"
+          ></textarea>
         </div>
         <div class="form-row">
           <div class="form-group col-md-2">
