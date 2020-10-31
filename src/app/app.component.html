@@ -4,7 +4,7 @@
       <i class="fas fa-home"></i> Actualización de sucursales
     </div>
     <div class="card-body text-primary">
-      <h4 class="card-title text-center">Actualizando</h4>
+      <h4 class="card-title text-center">{{tiendaDetalle}}</h4>
       <hr />
 
       <form>
@@ -30,70 +30,41 @@
             />
           </div>
         </div>
-        <div class="form-group">
-          <label for="inputAddress">Cabecera de ticket</label>
-          <textarea
-            class="form-control form-control-sm"
-            id="cabecera"
-            rows="3"
-          ></textarea>
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Pie de ticket</label>
-          <textarea
-            class="form-control form-control-sm"
-            id="pie"
-            rows="3"
-          ></textarea>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-2">
-            <label for="inputCity">Teléfono</label>
-            <input
-              type="text"
-              class="form-control form-control-sm"
-              id="inputCity"
-            />
-          </div>
-          <div class="form-group col-md-5">
-            <label for="inputState">Rol</label>
-            <select id="inputState" class="form-control form-control-sm">
-              <option selected>Vendedor</option>
-              <option>Almacén</option>
-              <option>Compras</option>
-              <option>Administrador</option>
-            </select>
-          </div>
-          <div class="form-group col-md-5">
-            <label for="inputState">Sucursal</label>
-            <select id="inputState" class="form-control form-control-sm">
-              <option selected>Tienda 1</option>
-              <option>Tienda 2</option>
-              <option>Tienda 3</option>
-              <option>Matriz</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <div class="custom-control custom-switch">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="customSwitch1"
-                checked
-              />
-              <label class="custom-control-label" for="customSwitch1"
-                >Iniciar activo</label
-              >
+
+        <div class="row">
+          <div class="col-md-8">
+            <div class="form-group">
+              <label for="inputAddress">Cabecera de ticket</label>
+              <textarea
+                class="form-control form-control-sm"
+                id="cabecera"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Pie de ticket</label>
+              <textarea
+                class="form-control form-control-sm"
+                id="pie"
+                rows="3"
+              ></textarea>
             </div>
           </div>
+          <div class="col-md-4">
+            <img
+              src="https://articulospromocionalesenmexico.com/19930-large_default/cangurera.jpg"
+              class="justify-content-end "
+              width="200"
+            />
+            <input
+              class="justify-content-end form-control form-control-sm"
+              type="file"
+            />
+          </div>
         </div>
+
         <div class="form-row">
           <div class="form-group col-md-12"><hr /></div>
-          <!-- <div class="form-group col-md-2 d-flex justify-content-end">
-            algodon
-          </div> -->
         </div>
         <div class="d-flex justify-content-end bd-highlight">
           <button type="button" class="btn-sm btn btn-outline-success mr-5">
